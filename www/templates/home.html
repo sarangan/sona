@@ -1,0 +1,47 @@
+<ion-view title="Home">
+	<ion-content class=" has-footer">
+	  <ion-slide-box on-slide-changed="slideHasChanged($index)">
+		  <ion-slide>
+		    <div class="box">
+		    	<img src="img/slider_1.png" class="slider_img" />
+		    </div>
+		  </ion-slide>
+		  <ion-slide>
+		    <div class="box">
+		    	<img src="img/slider_2.png" class="slider_img" />
+		    </div>
+		  </ion-slide>
+		  <ion-slide>
+		    <div class="box">
+		    	<img src="img/slider_3.png" class="slider_img" />
+		    </div>
+		  </ion-slide>
+		</ion-slide-box>
+
+		<div class="row">
+  			<div class="col"  ng-repeat="i in [71,69,59]">
+  				<product-panels>
+  				</product-panels>
+  			</div>
+  		</div>
+
+  		<div class="row">
+  			<div class="col"  ng-repeat="i in [73,72,68]">
+  				<product-panels>
+  				</product-panels>
+  			</div>
+  		</div>
+
+  		<div class="row">
+
+  			<div class="col"  ng-repeat="i in [74,75]">
+  				<product-panels>
+  				</product-panels>
+  			</div>
+  			<div class="col"></div>
+  		</div>
+
+  		
+
+	</ion-content>
+</ion-view>

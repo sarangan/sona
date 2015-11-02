@@ -1,0 +1,50 @@
+<ion-view title="login">
+<ion-content class="splash">
+
+	<div class="branding-with-login">
+		<img src="img/logo.png" alt="Sona Logo">
+		<div class="tagline">SINCE 1994</div>
+	</div>
+
+	<div class="list list-inset login-inset-custom"  ng-controller="UserCtrl as usr">
+
+	<form name="login" novalidate ng-submit="login.$valid && usr.login(usr.user)">
+
+		<md-input-container flex>
+          <label>Username / Email</label>
+          <input ng-model="usr.user.username" required>
+      </md-input-container>
+
+      <md-input-container flex>
+          <label>Password</label>
+          <input type="password" ng-model="usr.user.password" required>
+      </md-input-container>
+
+      <section layout="row" layout-sm="column" layout-align="center center">
+	 		<md-button class="md-raised md-warn sona-color" type="submit">Login</md-button>
+	 	</section>
+
+    </form>
+
+	 <!--  <label class="item item-input item-floating-label">
+	    <span class="input-label">Enter your username / Email</span>
+	    <input type="text" placeholder="Username / Email">
+	  </label>
+	  <label class="item item-input item-floating-label">
+	    <span class="input-label">Enter your password</span>
+	    <input type="password" placeholder="Password">
+	  </label> -->
+
+	  
+            <a href="#/signup">Forgot password?</a>
+	</div>
+
+</ion-content>
+
+<ion-footer-bar class="custom-footer-login">
+<div class="button-bar">
+	<a href="#/login" class="button button-large sona-color icon-left ion-person custom-footer-a">SIGN IN</a>
+	<a href="#/register" class="button button-large sona-color icon-left ion-plus-circled custom-footer-a">REGISTER</a>
+</div>
+</ion-footer-bar>
+</ion-view>

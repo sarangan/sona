@@ -1,0 +1,350 @@
+/* Empty. Add your own CSS if you like */
+.sona-color{
+	background-color: #EC4B5A;
+	color: #FFFFFF;
+}
+.splash {
+	background: url(../img/landing_img.png) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+.branding {
+	width: 50%;
+	max-width: 162px;
+	margin: 0 auto;
+	margin-top: 120px;
+	text-align: center;
+}
+.branding-with-login {
+	width: 30%;
+	max-width: 162px;
+	margin: 0 auto;
+	margin-top: 120px;
+	text-align: center;
+}
+
+.tagline {
+	font-size: 1.2rem;
+}
+.custom-footer-login{
+	background-color: none;
+	padding: 0px;
+	border: none;
+}
+.login-inset-custom{
+	background-color: rgba(255, 255, 255, 0.43);
+}
+
+a.md-button.md-default-theme.md-fab, .md-button.md-default-theme.md-fab{
+	background-color: #EC4B5A;
+	color: #FFFFFF;
+}
+a.md-button.md-default-theme.md-fab:not([disabled]):hover, .md-button.md-default-theme.md-fab:not([disabled]):hover{
+	background-color: #EC4B5A;
+	color: #FFFFFF;
+}
+
+.slider_img{
+	width: 100%;
+	height: 30%;
+}
+.menu_logo_div{
+	height: auto;
+}
+.menu_logo{
+	width: 50%;
+	height: 50%;
+}
+/* ------------ flliping card ---------- */
+
+.filp-img {
+ 	width: 100%;
+  	height: auto;
+}
+
+/* Flip animation container, keeps perspective */
+.flip-container {
+  -webkit-perspective: 1000;
+  -moz-perspective: 1000;
+  -ms-perspective: 1000;
+  perspective: 1000;
+}
+
+/* Set animation variables */
+.front, .back {
+  -webkit-animation-duration: 15s;
+  -moz-animation-duration: 15s;
+  -ms-animation-duration: 15s;
+  animation-duration: 15s;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -ms-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease;
+  -moz-animation-timing-function: ease;
+  -ms-animation-timing-function: ease;
+  animation-timing-function: ease;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -ms-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  width: 100%;
+}
+.front_71, .back_71{
+	-webkit-animation-duration: 15s;
+	-moz-animation-duration: 15s;
+	-ms-animation-duration: 15s;
+	animation-duration: 15s;
+}
+.front_69, .back_69{
+	-webkit-animation-duration: 25s;
+	-moz-animation-duration: 25s;
+	-ms-animation-duration: 25s;
+	animation-duration: 25s;
+}
+.front_59, .back_59{
+	-webkit-animation-duration: 30s;
+	-moz-animation-duration: 30s;
+	-ms-animation-duration: 30s;
+	animation-duration: 30s;
+}
+.front_73, .back_73{
+	-webkit-animation-duration: 25s;
+	-moz-animation-duration: 25s;
+	-ms-animation-duration: 25s;
+	animation-duration: 25s;
+}
+.front_72, .back_72{
+	-webkit-animation-duration: 30s;
+	-moz-animation-duration: 30s;
+	-ms-animation-duration: 30s;
+	animation-duration: 30s;
+}
+.front_68, .back_68{
+	-webkit-animation-duration: 35s;
+	-moz-animation-duration: 35s;
+	-ms-animation-duration: 35s;
+	animation-duration: 35s;
+}
+.front_74, .back_74{
+	-webkit-animation-duration: 40s;
+	-moz-animation-duration: 40s;
+	-ms-animation-duration: 40s;
+	animation-duration: 40s;
+}
+.front_75, .back_75{
+	-webkit-animation-duration: 45s;
+	-moz-animation-duration: 45s;
+	-ms-animation-duration: 45s;
+	animation-duration: 45s;
+}
+
+/* Call the animations for each side of the card */
+.front {
+  -webkit-animation-name: cardFlipFront;
+  -moz-animation-name: cardFlipFront;
+  -ms-animation-name: cardFlipFront;
+  animation-name: cardFlipFront;
+}
+
+.back {
+  -webkit-animation-name: cardFlipBack;
+  -moz-animation-name: cardFlipBack;
+  -ms-animation-name: cardFlipBack;
+  animation-name: cardFlipBack;
+}
+
+/* We have two seperate @keyframe animations for each side of the card so we can get this working in IE */
+/* This one animates the front card */
+@keyframes cardFlipFront {
+  0% {
+    -moz-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+  }
+  22.5% {
+    -moz-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+  }
+  27.5% {
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+  }
+  72.5% {
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+  }
+  77.5% {
+    -moz-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+  }
+  100% {
+    -moz-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+  }
+}
+/* This one animates the front card in webkit */
+@-webkit-keyframes cardFlipFront {
+  0% {
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+  }
+  22.5% {
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+  }
+  27.5% {
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+  }
+  72.5% {
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+  }
+  77.5% {
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+  }
+  100% {
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+  }
+}
+/* This one animates the back card */
+@keyframes cardFlipBack {
+  0% {
+    -moz-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+  }
+  22.5% {
+    -moz-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+  }
+  27.5% {
+    -moz-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+  }
+  72.5% {
+    -moz-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+  }
+  77.5% {
+    -moz-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+  }
+  100% {
+    -moz-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+  }
+}
+/* This one animates the back card in webkit */
+@-webkit-keyframes cardFlipBack {
+  0% {
+    -webkit-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+  }
+  22.5% {
+    -webkit-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+  }
+  27.5% {
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+  }
+  72.5% {
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+  }
+  77.5% {
+    -webkit-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+  }
+  100% {
+    -webkit-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+  }
+}
+/* Hide back of card during swap */
+.front, .back {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden;
+  /*position: absolute;*/
+  top: 0;
+  left: 0;
+}
+.back{
+	position: absolute;
+}
+
+/* Front card stacked above the back card */
+.front {
+  z-index: 2;
+}
+
+/* The back, initially hidden, card */
+.back {
+  -webkit-transform: rotateY(-180deg);
+  -moz-transform: rotateY(-180deg);
+  -ms-transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
+}
+.list_image-alter{
+	position : relative !important;
+	left:0px !important;
+	/*top :0px !important;*/
+	height: 100% !important;
+	width: 100% !important;
+	max-height: 100% !important;
+	max-width: 100% !important;
+
+}
+.custom_item{
+	float: left;
+	overflow: hidden;
+}
+.custom_item a{
+	padding-top: 0px !important; 
+  /* padding-left: 0px !important; */
+   padding: 0px !important;
+   padding-left: 10px !important;;
+   padding-right: 10px !important;;
+   margin: auto;
+
+}
+.product-item-heading{
+	/*margin: 0px !important;*/
+	padding-left: 20px;
+	padding-top: 20px;
+}
+.product-item-des{
+	height: 100px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.product-title{
+	font-weight: bold;
+}
+
+.text-align{
+	text-align: justify;
+}

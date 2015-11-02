@@ -1,0 +1,85 @@
+<ion-view title="register">
+  <div class="bar bar-header sona-color">
+    <h1 class="title">Sona</h1>
+  </div>
+
+<ion-content class="padding has-header">
+
+    <div class="list list-inset login-inset-custom" data-ng-controller="newUserCtrl as newUser">
+
+      <form name="frmNewUser" novalidate ng-submit="frmNewUser.$valid && newUser.save(newUser.user)">
+
+        <div layout layout-sm="column">
+            <md-input-container flex>
+              <label>NIRC</label>
+              <input name="nirc" id="nirc" data-ng-model="newUser.user.nirc" required>
+            </md-input-container>
+            <md-input-container flex>
+              <label>Email</label>
+              <input name="email" id="email" data-ng-model="newUser.user.email" required>
+            </md-input-container>
+        </div>
+
+        <div layout layout-sm="column">
+            <md-input-container flex>
+              <label>First name</label>
+              <input name="firstname" id="firstname" data-ng-model="newUser.user.firstname" required>
+            </md-input-container>
+            <md-input-container flex>
+              <label>Last name</label>
+              <input name="lastname" id="lastname" data-ng-model="newUser.user.lastname" required>
+            </md-input-container>
+        </div>
+
+
+
+        <md-input-container flex>
+            <label>Address</label>
+            <input name="address" id="address" data-ng-model="newUser.user.address" required>
+        </md-input-container>
+
+         <div layout layout-sm="column">
+
+             <md-input-container flex>
+              <label>Postal Code</label>
+              <input name="postalcode" id="postalcode" data-ng-model="newUser.user.postalcode" required>
+            </md-input-container>
+
+            <md-input-container flex>
+              <label>Telephone</label>
+              <input name="telephone" id="telephone" data-ng-model="newUser.user.telephone">
+            </md-input-container>           
+            
+        </div>
+
+        <div layout layout-sm="column">
+            <md-input-container flex>
+              <label>Password</label>
+              <input type="password" name="password" id="password" data-ng-model="newUser.user.password" required>
+            </md-input-container>
+            <md-input-container flex>
+              <label>Confirm password</label>
+              <input type="password" name="confirm_password" id="confirm_password" data-ng-model="newUser.user.confirm_password" required>
+            </md-input-container>
+        </div>
+
+        <div style="text-align: right;">
+          <md-button class="md-fab" aria-label="Eat cake" type="submit">
+              <i class="icon ion-plus-round" style="font-size:150%;"></i>
+          </md-button>
+        </div>
+
+      </form>
+     
+  
+  </div>
+
+</ion-content>
+
+<ion-footer-bar class="custom-footer-login">
+<div class="button-bar">
+  <a href="#/login" class="button button-large sona-color icon-left ion-person custom-footer-a">SIGN IN</a>
+  <a href="#/register" class="button button-large sona-color icon-left ion-plus-circled custom-footer-a">REGISTER</a>
+</div>
+</ion-footer-bar>
+</ion-view>
